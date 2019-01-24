@@ -7,24 +7,41 @@
     
     <link href="./style.css" rel="stylesheet">
 
-    <!--Roboto font, jQuery-->
+    <!--Roboto font, jQuery, Fuse.js, fuzzyComplete-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.3.0/fuse.min.js"></script>
+    <script src="./JSON-Autocomplete-Fuzzy-Search-jQuery-fuzzyComplete/dist/js/fuzzycomplete.min.js"></script>
     
+    <!--js scripts-->
+    <script src="./js/feedback_collection.js"></script>
+
 </head>
 <body>
     
     <div class="content">
         
         <header class="header__grid-container">
-            <a class="header__item1" href="./choose-course.html">&lt;</a>    <!--code for "<"-->
+            <a class="header__item1" href="./choose-course.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
             <div class="header__item2 bold">TDT4100 Objektorientert programmering</div>
             <div class="header__item3 bold">Hva liker du med forelesningene?</div>
         </header>
         
+        <div class="ui search">
+            <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Søk her...">
+                <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+       </div>
+
         <div>
             <div class="bold">Skriv innspillet ditt:</div>
-        </div> 
+            <input id="js-feedbackInput" type="text" name="inputFeedback" placeholder="Skriv innspillet ditt...">
+        </div>
+        
+
+        <div>Mer tekst kommer her</div>
 
     
     </div>
