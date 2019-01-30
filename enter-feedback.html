@@ -13,8 +13,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.3.0/fuse.min.js"></script>
     <script src="./JSON-Autocomplete-Fuzzy-Search-jQuery-fuzzyComplete/dist/js/fuzzycomplete.min.js"></script>
     
+    <!--Firebase core app and Firestore-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+
     <!--js scripts-->
     <script src="./js/feedback_collection.js"></script>
+
 
 </head>
 <body>
@@ -27,14 +32,6 @@
             <div class="header__item3 bold">Hva liker du med forelesningene?</div>
         </header>
         
-        <div class="ui search">
-            <div class="ui icon input">
-                <input class="prompt" type="text" placeholder="Søk her...">
-                <i class="search icon"></i>
-            </div>
-            <div class="results"></div>
-       </div>
-
         <div>
             <div class="bold">Skriv innspillet ditt:</div>
             <input id="js-feedbackInput" type="text" name="inputFeedback" placeholder="Skriv innspillet ditt...">
@@ -45,6 +42,8 @@
 
     
     </div>
-    
+
+
 </body>
+    
 </html>

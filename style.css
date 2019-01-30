@@ -82,7 +82,7 @@ body {
     background-image: linear-gradient(to right, rgba(252, 55, 29, 0.5), rgba(254, 142, 122, 0.5));
 }
 
-.feedback-container--positive {
+.card {
     border-radius: 0.5em;
     background-color: #FFFFFF;
     padding-top: 1em;
@@ -90,7 +90,7 @@ body {
     margin: 1em auto 0 auto;
     width: 93%;
 }
-
+/*
 .feedback-container--negative {
     border-radius: 0.5em;
     background-color: #FFFFFF;
@@ -99,7 +99,7 @@ body {
     margin: 1em auto 0 auto;
     width: 93%;
 }
-
+*/
 .feedback--like-bar {
     background-color: rgb(89, 219, 93);
     /*background-image: linear-gradient(to right, #6ACA25, #B2E98A);*/
@@ -136,7 +136,7 @@ body {
     margin-left: 2em;
     margin-bottom: 0.5em;
 }
-
+/*
 .theme-list {
     border-radius: 0.5em;
     background-color: #FFFFFF;
@@ -145,7 +145,21 @@ body {
     margin: 1em auto 0 auto;
     width: 93%;
 }
+*/
 
+.theme__header {
+    margin: -0.3em 0.8em 0.5em 0.8em;
+    padding-bottom: 0.7em;
+    border-bottom: 0.1em solid #EFEFEF;
+    text-align: center;
+}
+
+.theme__item {
+    margin: 0.5em 0.8em 0 0.8em;
+    padding-bottom: 0.55em;
+    padding-left: 0.3em;
+    border-bottom: 0.1em solid #EFEFEF;
+}
 
 /* SEARCH AUTOCOMPLETE*/
 
