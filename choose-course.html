@@ -7,47 +7,36 @@
 
     <link href="./style.css" rel="stylesheet">
 
-    <!--Roboto font, jQuery, Semantic-UI CSS & JS-->
+    <!--Roboto font, jQuery-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="./node_modules/jquery/dist/jquery.js"></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <!--<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>-->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/search.css">
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/components/search.js"></script>
 
-    <!--search semantic-ui-->
-    <script src="js/search_semantic-ui.js"></script>
 
 </head>
 <body>
     
-    <h3>Tilbakemelding for:</h3>
-    <div>Dropdown menu HER</div>
-    <ul>
-        <li>TDT4100</li>
-        <li>IT2805</li>
-        <li>TDT4110</li>
-    </ul>
+    <div class="content">
 
-   <div class="ui search">
-        <div class="ui icon input">
-            <input class="prompt" type="text" placeholder="Søk her...">
-            <i class="search icon"></i>
+        <div class="card">
+
+            <h3>Tilbakemelding for:</h3>
+
+            <div>
+                <div class="bold">Velg fag:</div>
+                <input id="js-courseInput" class="inputField" type="text" name="inputChooseCourse" placeholder="Søk...">
+            </div>
+
+            <div>
+                <span class="bold">Instruksjon: </span>
+                <br>
+                Gi tre innspill om ting du <span class="bold">liker</span> og tre ting du <span class="bold">ikke liker</span> med X FAG
+            </div>
+
         </div>
-        <div class="results"></div>
-   </div>
 
-    <div>
-        <span class="bold">Instruksjon: </span>
-        <br>
-        Gi tre innspill om ting du <span class="bold">liker</span> og tre ting du <span class="bold">ikke liker</span> med X FAG
+        <a href="./feedback-overview.html"><button class="button">START</button></a>
+
     </div>
-
-    <button class="button">START</button>
-
-
 
 </body>
 </html>
