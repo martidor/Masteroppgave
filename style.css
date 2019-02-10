@@ -13,26 +13,34 @@ html {
 }
 
 body {
-    background-color: #EFEFEF;
+    background-color: #FFFFFF;
     font-family: 'Roboto', Helvetica, sans-serif;
-    color: #666666;
+    color: #7a7a7a;
     margin-left: auto;
     margin-right: auto;
     font-size: 1em;
     width: 50%;
     /*min-height: 100vh;*/
-    padding-bottom: 2em;
 }
-/*
+
 .content {
+    background-color: #FFFFFF;
     padding-top: 2em;
+    padding-bottom: 2em;
     margin-right: auto;
     margin-left: auto;
     width: 80%;
 }
-*/
+
+.content--grey {
+    background-color: #EFEFEF;
+    padding-top: 0.1em;
+    padding-bottom: 2em;
+}
+
 .bold {
     font-weight: bold;
+    color: #666666;
 }
 
 a {
@@ -50,6 +58,7 @@ a {
     font-size: 16px;
     margin: 4em auto 0em auto;
     display: block;
+    /*legg til drop shadow*/
 }
 
 .header__grid-container {
@@ -178,6 +187,9 @@ a {
     border-radius: 5em;
     border: 0.1em solid rgba(34, 36, 38, 0.342);
     padding: 0.5em 0.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 90%;
 }
 
 .inputField::placeholder {
