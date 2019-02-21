@@ -32,13 +32,15 @@
     
     <div class="content">
 
-        <div>
-            <div class="bold">Skriv innspillet ditt:</div>
-            <input id="js-feedbackInput" class="inputField" type="text" name="inputFeedback" placeholder="Skriv innspillet ditt...">
-        </div>
         
-
-        <div>Mer tekst kommer her</div>
+        <div class="bold">Hva liker du med faget?</div>
+        <div class="small-text">(Maks 140 tegn)</div>
+        <input id="js-feedbackInput" class="inputField" type="text" name="inputFeedback" placeholder="Skriv innspillet ditt..." maxlength="140">
+        
+        <div class="bold">Kommentar (valgfritt):</div>
+        <div class="small-text">Her kan du legge til en kommentar hvis du vil utfylle innspillet mer</div>
+        <textarea class="input__comment" placeholder="Kommentar..."></textarea>
+        
 
     </div>
 
