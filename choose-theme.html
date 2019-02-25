@@ -27,20 +27,20 @@
     <header class="header__grid-container">
         <a class="header__item1" href="./choose-positive-theme.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
         <div class="header__item2 bold">TDT4100 Objektorientert programmering</div>
-        <div class="header__item3 bold">Hva liker du med faget?</div>
+        <div class="header__item3 bold">Valgt innspill</div>
     </header>
     
     <div class="content">
         
-        <div class="bold">Hva liker du med faget?</div>
-        <div class="small-text">(Maks 140 tegn)</div>
-        <input id="js-feedbackInput" class="inputField" type="text" name="inputFeedback" placeholder="Skriv innspillet ditt..." maxlength="140">
-        
-        <div class="bold">Kommentar (valgfritt):</div>
-        <div class="small-text">Her kan du legge til en kommentar hvis du vil utfylle innspillet mer</div>
-        <textarea class="input__comment" placeholder="Kommentar..."></textarea>
+        <form>
+            <input type="radio" name="theme" value="forelesningene">Forelesningene
+            <input type="radio" name="theme" value="ovingene">Øvingene
+            <input type="radio" name="theme" value="foreleseren">Foreleseren
+            <input type="radio" name="theme" value="foreleseren">Gjennomføringen av faget
+            <input type="radio" name="theme" value="annet">Annet
+        </form>
 
-        <a href="./choose-theme.html" class="button">NESTE</a>
+        <a href="./feedback-overview.html" class="button">FERDIG</a>
 
     </div>
 
