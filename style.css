@@ -240,6 +240,8 @@ Do NOT change the name of this class, it will break fuzzysearch*/
     border-bottom: 1px solid rgba(34, 36, 38, 0.1);
 }
 
+/*End of search autocomplete*/
+
 
 .input__comment {
     width: 93%;
@@ -250,6 +252,25 @@ Do NOT change the name of this class, it will break fuzzysearch*/
 
 .input__comment::placeholder {
     opacity: 0.6;
+}
+
+form ul li {
+    list-style: none;
+    border: 2px solid blue;
+    width: fit-content;
+}
+
+label {
+    border: 2px solid black;
+}
+
+input[name=theme] {
+    
+}
+
+input:checked {
+    background-color: blue;
+    color: red;
 }
 
 @media screen and (max-width: 600px) {
