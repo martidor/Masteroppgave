@@ -128,8 +128,10 @@ a {
 */
 .feedback--like-bar {
     background-color: rgb(89, 219, 93);
-    /*background-image: linear-gradient(to right, #6ACA25, #B2E98A);*/
     color: #FFFFFF;
+    /*background-image: linear-gradient(to right, #6ACA25, #B2E98A);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    font-weight: bold;*/
     margin-right: 1.3em;
     margin-bottom: 1em;
     margin-left: 1.5em;
@@ -189,6 +191,7 @@ a {
     border-bottom: 0.1em solid #EFEFEF;
 }
 
+
 /* SEARCH AUTOCOMPLETE*/
 
 .inputField {
@@ -240,8 +243,8 @@ Do NOT change the name of this class, it will break fuzzysearch*/
     border-bottom: 1px solid rgba(34, 36, 38, 0.1);
 }
 
-/*End of search autocomplete*/
 
+/*Comments*/
 
 .input__comment {
     width: 93%;
@@ -254,24 +257,37 @@ Do NOT change the name of this class, it will break fuzzysearch*/
     opacity: 0.6;
 }
 
+
+/*Theme radio buttons*/
+
 form ul li {
     list-style: none;
-    border: 2px solid blue;
     width: fit-content;
+    margin-bottom: 1em;
 }
 
-label {
+.input__label {
+    border-radius: 3em;
+    background-color: rgb(83, 201, 87);
     border: 2px solid black;
+    color: white;
+    padding: 0.8em 1.4em;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0em 0.17em 0.3em rgba(97, 97, 97, 0.75);
 }
 
 input[name=theme] {
-    
+    margin-bottom: 2em;
+    opacity: 0;
 }
 
-input:checked {
+input:checked + label {
     background-color: blue;
-    color: red;
 }
+
+
+/*media queries*/
 
 @media screen and (max-width: 600px) {
     body {

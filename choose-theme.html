@@ -27,18 +27,18 @@
     <header class="header__grid-container">
         <a class="header__item1" href="./choose-positive-theme.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
         <div class="header__item2 bold">TDT4100 Objektorientert programmering</div>
-        <div class="header__item3 bold">Valgt innspill</div>
+        <div class="header__item3 bold">Velg tema</div>
     </header>
     
     <div class="content">
         
         <form>
             <ul>
-                <li><label><input type="radio" name="theme" value="forelesningene">Forelesningene</label></li>
-                <li><label><input type="radio" name="theme" value="ovingene">Øvingene</label></li>
-                <li><label><input type="radio" name="theme" value="foreleseren">Foreleseren</label></li>
-                <li><label><input type="radio" name="theme" value="foreleseren">Gjennomføringen av faget</label></li>
-                <li><label><input type="radio" name="theme" value="annet">Annet</label></li>
+                <li><input id="input__forelesningene" type="radio" name="theme" value="forelesningene"><label for="input__forelesningene" class="input__label">Forelesningene</label></li>
+                <li><input id="input__ovingene" type="radio" name="theme" value="ovingene"><label for="input__ovingene" class="input__label">Øvingene</label></li>
+                <li><input id="input__foreleseren" type="radio" name="theme" value="foreleseren"><label for="input__foreleseren" class="input__label">Foreleseren</label></li>
+                <li><input id="input__gjennomforing" type="radio" name="theme" value="gjennomforing"><label for="input__gjennomforing" class="input__label">Gjennomføringen av faget</label></li>
+                <li><input id="input__annet" type="radio" name="theme" value="annet"><label for="input__annet" class="input__label">Annet</label></li>
             </ul>
         </form>
 
