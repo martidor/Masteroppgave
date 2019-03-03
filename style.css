@@ -260,6 +260,15 @@ Do NOT change the name of this class, it will break fuzzysearch*/
 
 /*Theme radio buttons*/
 
+.theme-form {
+    margin-top: 2.5em;
+    margin-left: -1em;
+}
+
+ul {
+    padding: 0em;
+}
+
 form ul li {
     list-style: none;
     width: fit-content;
@@ -267,14 +276,13 @@ form ul li {
 }
 
 .input__label {
-    border-radius: 3em;
-    background-color: rgb(83, 201, 87);
-    border: 2px solid black;
-    color: white;
+    border-radius: 0.8em;
+    background-color: rgb(213, 227, 255);
+    color: black;
     padding: 0.8em 1.4em;
     text-align: center;
     text-decoration: none;
-    box-shadow: 0em 0.17em 0.3em rgba(97, 97, 97, 0.75);
+    box-shadow: 0em 0.09em 0.3em rgba(97, 97, 97, 0.75);
 }
 
 input[name=theme] {
@@ -283,7 +291,8 @@ input[name=theme] {
 }
 
 input:checked + label {
-    background-color: blue;
+    background-color: rgb(99, 136, 206);
+    color: #FFFFFF;
 }
 
 
