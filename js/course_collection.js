@@ -48,15 +48,14 @@ $(document).ready(
             });
         });
 
-        /*
-        var feedback = [
-            {"comment": "Forelesningene er gode ooooooooooog konge og bra"},
-            {"comment": "Forelesningene er dårlige"},
-            {"comment": "Eksemplene er gode"},
-            {"comment": "Foilene er bra"}
-        ];
-        $("#js-courseInput").fuzzyComplete(feedback);
-        $(".prompt").fuzzyComplete(feedback);
+
+        /*db.collection("courses").doc("IT2810").set({
+            coursecode: "IT2810",
+            coursename: "Webutvikling"
+        });
         */
+        
+        
+
     }
 );
