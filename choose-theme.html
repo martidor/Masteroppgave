@@ -19,14 +19,15 @@
 
     <!--js scripts-->
     <script src="./js/feedback_collection_test.js"></script>
+    <script src="./js/choose_theme.js"></script>
 
 
 </head>
 <body>
     
     <header class="header__grid-container">
-        <a class="header__item1" href="./choose-positive-theme.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
-        <div class="header__item2 bold">TDT4100 Objektorientert programmering</div>
+        <a class="header__item1" href="./enter-feedback.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
+        <div class="header__item2 bold" id="js-courseHeader">TDT4100 Objektorientert programmering</div>
         <div class="header__item3 bold">Velg tema</div>
     </header>
     
@@ -37,9 +38,13 @@
         <form class="theme-form">
             <ul>
                 <li><input id="input__forelesningene" type="radio" name="theme" value="forelesningene"><label for="input__forelesningene" class="input__label">Forelesningene</label></li>
+                <li class="small-text theme__help-text">(Forelesningene, eksemplene, foilene etc.)</li>
                 <li><input id="input__ovingene" type="radio" name="theme" value="ovingene"><label for="input__ovingene" class="input__label">Øvingene</label></li>
-                <li><input id="input__foreleseren" type="radio" name="theme" value="foreleseren"><label for="input__foreleseren" class="input__label">Foreleseren</label></li>
+                <li class="small-text theme__help-text">(Øvingsopplegget, oppgavene etc.)</li>
+                <li><input id="input__foreleseren" type="radio" name="theme" value="foreleseren"><label for="input__foreleseren" class="input__label">Foreleseren/stud.ass</label></li>
+                <li class="small-text theme__help-text">(Foreleseren, stud.ass, studentene etc.)</li>
                 <li><input id="input__gjennomforing" type="radio" name="theme" value="gjennomforing"><label for="input__gjennomforing" class="input__label">Gjennomføringen av faget</label></li>
+                <li class="small-text theme__help-text">(Om faget, pensum etc.)</li>
                 <li><input id="input__annet" type="radio" name="theme" value="annet"><label for="input__annet" class="input__label">Annet</label></li>
             </ul>
         </form>

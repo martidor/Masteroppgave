@@ -7,10 +7,18 @@
 
     <link href="./style.css" rel="stylesheet">
 
-    <!--Roboto font, jQuery-->
+    <!--Roboto font, jQuery, Fuse.js, fuzzyComplete-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.3.0/fuse.min.js"></script>
+    <script src="./JSON-Autocomplete-Fuzzy-Search-jQuery-fuzzyComplete/dist/js/fuzzycomplete.min.js"></script>
 
+    <!--Firebase core app and Firestore-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+
+    <!--js scripts-->
+    <script src="./js/course_collection.js"></script>    
 
 </head>
 <body>
@@ -32,7 +40,7 @@
 
         
 
-        <a href="./feedback-overview.html" class="button">START</a>
+        <a href="./feedback-overview.html" id="js-courseButton" class="button">START</a>
 
     </div>
 

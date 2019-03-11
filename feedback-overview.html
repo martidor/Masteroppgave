@@ -11,19 +11,22 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     
+    <!--js scripts-->
+    <script src="./js/feedback_overview.js"></script>
+
 </head>
 <body>
     
     <header class="header__grid-container">
         <a class="header__item1" href="./choose-course.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
-        <div class="header__item2 bold">TDT4100</div>
-        <div class="header__item3 bold">Objektorientert programmering</div>
+        <div class="header__item2 bold" id="js-courseCodeHeader">TDT4100</div>
+        <div class="header__item3 bold" id="js-courseNameHeader">Objektorientert programmering</div>
     </header>
 
     <div class="content--grey">
 
         <div class="card">
-            <a href="./choose-positive-theme.html"><img src="./icons/plus_icon.svg" class="feedback__plus-icon"></a>
+            <a href="./enter-feedback.html" id="js-addPositiveButton"><img src="./icons/plus_icon.svg" class="feedback__plus-icon"></a>
             <div class="feedback--like-bar">Det jeg liker</div>
             <div class="feedback__post">1. Eksemplene er gode</div>
             <div class="feedback__post">2. Bra bra bra kjempe bra</div>
@@ -31,14 +34,14 @@
         </div>
 
         <div class="card">
-            <a href="./choose-negative-theme.html"><img src="./icons/plus_icon.svg" class="feedback__plus-icon"></a>
+            <a href="./enter-feedback.html" id="js-addNegativeButton"><img src="./icons/plus_icon.svg" class="feedback__plus-icon"></a>
             <div class="feedback--dislike-bar">Det jeg ikke liker</div>
             <div class="feedback__post">1. Eksemplene er gode</div>
             <div class="feedback__post">2. Bra bra bra kjempe bra</div>
             <div class="feedback__post">3. Ching salabim</div>
         </div>
 
-        <a href="./finished.html" class="button">SEND INN SVAR</a>
+        <a href="./finished.html" class="button" id="sendInButton">SEND INN SVARENE</a>
 
     </div>
 

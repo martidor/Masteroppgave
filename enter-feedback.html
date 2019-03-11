@@ -19,25 +19,26 @@
 
     <!--js scripts-->
     <script src="./js/feedback_collection_test.js"></script>
+    <script src="./js/enter_feedback.js"></script>
 
 
 </head>
 <body>
     
     <header class="header__grid-container">
-        <a class="header__item1" href="./choose-positive-theme.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
-        <div class="header__item2 bold">TDT4100 Objektorientert programmering</div>
-        <div class="header__item3 bold">Hva liker du med faget?</div>
+        <a class="header__item1" href="./feedback-overview.html"><img src="./icons/back_chevron.svg" class="back-chevron" alt="back_chevron"></a>
+        <div class="header__item2 bold" id="js-courseHeader">TDT4100 Objektorientert programmering</div>
+        <div class="header__item3 bold" id="js-headerText">Si en ting du liker med faget</div>
     </header>
     
     <div class="content">
         
-        <div class="bold">Hva liker du med faget?</div>
+        <div class="bold" id="js-inputFieldHeader">Hva liker du med faget?</div>
         <div class="small-text">(Maks 140 tegn)</div>
         <input id="js-feedbackInput" class="inputField" type="text" name="inputFeedback" placeholder="Skriv innspillet ditt..." maxlength="140">
         
         <div class="bold">Kommentar (valgfritt):</div>
-        <div class="small-text">Her kan du legge til en kommentar hvis du vil utfylle innspillet mer</div>
+        <div class="small-text">(Her kan du utfylle innspillet mer ved behov)</div>
         <textarea class="input__comment" placeholder="Kommentar..."></textarea>
 
         <a href="./choose-theme.html" class="button">NESTE</a>
