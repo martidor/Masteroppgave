@@ -33,14 +33,29 @@ $(document).ready(
         $("#js-courseInput").fuzzyComplete(courses, options);
         
         
+        //sessionStorage
         let startButton = document.querySelector("#js-courseButton");
         
         startButton.addEventListener("click", () => {
             let input = document.querySelector("#js-courseInput").value;
             sessionStorage.setItem("course", input);
+
+            //test
+            let feedbackInput = document.querySelector("#js-courseInput").value;
+            console.log("test1");
+            db.collection("courses").doc("TDT4100").collection("feedback").add({
+                feedbackText: feedbackInput
+            }).then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch(function(error) {
+                console.error("Error adding document: ", error);
+            });
+            console.log("test2");
         })
 
-
+        
+        //test
         let feedbackList = [];
         db.collection("courses").doc("TDT4100").collection("feedback").where("isPositive", "==", true).get().then((snapshot) => {
             snapshot.docs.forEach(doc => {
@@ -55,7 +70,7 @@ $(document).ready(
         });
         */
         
-        
-
+       
+    
     }
 );
