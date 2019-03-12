@@ -36,22 +36,24 @@ $(document).ready(
         //sessionStorage
         let startButton = document.querySelector("#js-courseButton");
         
-        startButton.addEventListener("click", () => {
+        startButton.addEventListener("click", (event) => {
+            event.preventDefault();
             let input = document.querySelector("#js-courseInput").value;
             sessionStorage.setItem("course", input);
 
-            //test
-            let feedbackInput = document.querySelector("#js-courseInput").value;
+            //test DENNE FUNKER BARE MED PREVENTDEFAULT()
             console.log("test1");
             db.collection("courses").doc("TDT4100").collection("feedback").add({
-                feedbackText: feedbackInput
+                feedbackText: input
             }).then(function(docRef) {
                 console.log("Document written with ID: ", docRef.id);
+                window.location = "./feedback-overview.html";
             })
             .catch(function(error) {
                 console.error("Error adding document: ", error);
             });
             console.log("test2");
+
         })
 
         
@@ -63,10 +65,15 @@ $(document).ready(
             });
         });
 
-
-        /*db.collection("courses").doc("IT2810").set({
+        /*
+        db.collection("courses").add({
             coursecode: "IT2810",
-            coursename: "Webutvikling"
+            coursename: "Webutvikling4"
+        }).then(function() {
+            console.log("Document successfully written!");
+        })
+        .catch(function(error) {
+            console.error("Error writing document: ", error);
         });
         */
         
