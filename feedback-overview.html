@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     
+    <!--Firebase core app and Firestore-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+
     <!--js scripts-->
     <script src="./js/feedback_overview.js"></script>
 
@@ -28,17 +32,17 @@
         <div class="card">
             <a href="./enter-feedback.html" id="js-addPositiveButton"><img src="./icons/plus_icon.svg" class="feedback__plus-icon"></a>
             <div class="feedback--like-bar">Det jeg liker</div>
-            <div class="feedback__post">1. Eksemplene er gode</div>
-            <div class="feedback__post">2. Bra bra bra kjempe bra</div>
-            <div class="feedback__post">3. Ching salabim</div>
+            <div class="feedback__post" id="js-feedbackPositive1">1. </div>
+            <div class="feedback__post" id="js-feedbackPositive2">2. </div>
+            <div class="feedback__post" id="js-feedbackPositive3">3. </div>
         </div>
 
         <div class="card">
             <a href="./enter-feedback.html" id="js-addNegativeButton"><img src="./icons/plus_icon.svg" class="feedback__plus-icon"></a>
             <div class="feedback--dislike-bar">Det jeg ikke liker</div>
-            <div class="feedback__post">1. Eksemplene er gode</div>
-            <div class="feedback__post">2. Bra bra bra kjempe bra</div>
-            <div class="feedback__post">3. Ching salabim</div>
+            <div class="feedback__post" id="js-feedbackNegative1">1. </div>
+            <div class="feedback__post" id="js-feedbackNegative2">2. </div>
+            <div class="feedback__post" id="js-feedbackNegative3">3. </div>
         </div>
 
         <a href="./finished.html" class="button" id="sendInButton">SEND INN SVARENE</a>

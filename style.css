@@ -169,6 +169,10 @@ a {
 .feedback__post {
     margin-left: 2em;
     margin-bottom: 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 83%;
 }
 /*
 .theme-list {
