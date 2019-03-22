@@ -12,8 +12,7 @@ $(document).ready(
         };
         
         firebase.initializeApp(config);
-        const db = firebase.firestore();
-        
+        const db = firebase.firestore();        
         
         let courses = [];
         db.collection("courses").get().then((snapshot) => {
@@ -27,34 +26,29 @@ $(document).ready(
             console.log("Error getting document:", error);
         });
 
-        
         //options set by Fuse.js
-        var fuseOptions = { keys: ["course", "course"] }; 
+        var fuseOptions = {
+            shouldSort: true,
+            threshold: 0.6,
+            location: 0,
+            distance: 100,
+            maxPatternLength: 140,
+            minMatchCharLength: 1,
+            keys: ["course"]
+          };
         //options set by FuzzyComplete
-        var options = { display: "course", key: "course", fuseOptions: fuseOptions };
+        var options = { display: "course", key: "course", resultsLimit: 10, fuseOptions: fuseOptions };
         
         $("#js-courseInput").fuzzyComplete(courses, options);
         
         
         //sessionStorage
         let startButton = document.querySelector("#js-courseButton");
-        startButton.addEventListener("click", (event) => {
+        startButton.addEventListener("click", () => {
             let input = document.querySelector("#js-courseInput").value;
             sessionStorage.setItem("course", input);
             console.log("course set to: " + input);
         });
-
-
-
-        //test
-        let feedbackList = [];
-        db.collection("courses").doc("TDT4100").collection("feedback").where("isPositive", "==", true).get().then((snapshot) => {
-            snapshot.docs.forEach(doc => {
-                console.log(doc.data());
-            });
-        });
-        
-       
     
     }
 );
