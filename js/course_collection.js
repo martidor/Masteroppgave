@@ -42,7 +42,7 @@ $(document).ready(
         $("#js-courseInput").fuzzyComplete(courses, options);
         
         
-        //sessionStorage
+        //start-button and sessionStorage
         let startButton = document.querySelector("#js-courseButton");
         startButton.addEventListener("click", () => {
             let input = document.querySelector("#js-courseInput").value;

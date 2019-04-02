@@ -67,11 +67,13 @@ $(document).ready(function() {
     nextButton.addEventListener("click", (event) => {
         event.preventDefault();
         let feedbackInput = document.querySelector("#js-feedbackInput").value;
+        let date = new Date();
         db.collection("courses").doc(courseCode).collection("feedback").add({
             feedbackText: feedbackInput,
-            isPositive: isPositive
+            isPositive: isPositive,
+            dateString: date.toDateString()
         }).then(function(docRef) {
-            console.log("Document written with ID: ", docRef.id);
+            console.log("Document written with ID: ", docRef.id + " and date: " + date.toDateString());
             sessionStorage.setItem("lastIDset", docRef.id);
             if (isPositive == "true") {
                 if (sessionStorage.getItem("docFeedbackPositive1") == "") {
