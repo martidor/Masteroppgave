@@ -14,6 +14,7 @@ $(document).ready(
         firebase.initializeApp(config);
         const db = firebase.firestore();        
         
+        //get list of courses
         let courses = [];
         db.collection("courses").get().then((snapshot) => {
             snapshot.docs.forEach(doc => {
@@ -29,9 +30,9 @@ $(document).ready(
         //options set by Fuse.js
         var fuseOptions = {
             shouldSort: true,
-            threshold: 0.6,
+            threshold: 0.7,
             location: 0,
-            distance: 100,
+            distance: 300,
             maxPatternLength: 140,
             minMatchCharLength: 1,
             keys: ["course"]
